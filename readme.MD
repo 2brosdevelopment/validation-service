@@ -14,4 +14,4 @@ Or by adding the package to your <pre><code>composer.json</code></pre>
     </code>
 </pre>
 
-Then install it via <pre><code>composer install</code></pre> or <pre><code>composer update</code></pre>
+Then install it via <code>composer install</code> or <pre><code>composer update</code></pre>
