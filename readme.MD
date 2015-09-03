@@ -34,7 +34,7 @@ This will create a file named `validation_service.php` in the configuration dire
 The format for this configuration file is:
 <pre>
     <code>
-        [
+        return [
             'passwordStrength' => 'User@passwordStrength'
         ];
     </code>
@@ -46,7 +46,7 @@ For each model that you need to validate, you can simply create a validation cla
 
 <pre>
     <code>
-        <?php
+        ```php
             use TwoBros\ValidationService\Services\Validation\LaravelValidator;
             
             class ModelCreateValidator extends LaravelValidator
@@ -57,7 +57,7 @@ For each model that you need to validate, you can simply create a validation cla
                 
                 
             }
-        ?>
+        ```
     </code>
 </pre>
 
