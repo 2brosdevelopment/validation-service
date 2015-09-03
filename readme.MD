@@ -59,67 +59,53 @@ For each model that you need to validate, you can simply create a validation cla
 
 Now when you want to validate data, you can pass the data into the validator and determine if it passed or not.
 
-<pre>
-    <code>
-        <?php
-            $modelValidator = new ModelCreateValidator($this->app['validator']);
-            
-            if ($modelValidator->with($inputArray)->passes()) {
-                // Do some stuff for passing
-            } else {
-                // Get the errors
-                $validationErrors = $modelValidator->errors();
-                
-                // Do some stuff for failing
-            }
-        ?>
-    </code>
-</pre>
+```php
+    $modelValidator = new ModelCreateValidator($this->app['validator']);
+    
+    if ($modelValidator->with($inputArray)->passes()) {
+        // Do some stuff for passing
+    } else {
+        // Get the errors
+        $validationErrors = $modelValidator->errors();
+        
+        // Do some stuff for failing
+    }
+```
 
 If you want customize your validation messages, you can do this by passing the message array to the `with` method.
 
-<pre>
-    <code>
-        <?php
-            $messages = [
-                'required' => 'The field :attribute is required'
-            ];
-            
-            $modelValidator = new ModelCreateValidator($this->app['validator']);
-            
-            if ($modelValidator->with($inputArray, $messages)->passes()) {
-                // Do some stuff for passing
-            } else {
-                // Get the errors
-                $validationErrors = $modelValidator->errors();
-                
-                // Do some stuff for failing
-            }
-            
-        ?>
-    </code>
-</pre>
+```php
+    $messages = [
+        'required' => 'The field :attribute is required'
+    ];
+    
+    $modelValidator = new ModelCreateValidator($this->app['validator']);
+    
+    if ($modelValidator->with($inputArray, $messages)->passes()) {
+        // Do some stuff for passing
+    } else {
+        // Get the errors
+        $validationErrors = $modelValidator->errors();
+        
+        // Do some stuff for failing
+    }            
+```
 
 Or by using the `withMessages` method of the validator.
 
-<pre>
-    <code>
-        <?php
-            $messages = [
-                'required' => 'The field :attribute is required'
-            ];
-            
-            $modelValidator = new ModelCreateValidator($this->app['validator']);
-            
-            if ($modelValidator->with($inputArray)->withMessages($messages)->passes()) {
-                // Do some stuff for passing
-            } else {
-                // Get the errors
-                $validationErrors = $modelValidator->errors();
-                
-                // Do some stuff for failing
-            }
-            
-        ?>
-    </code>
-</pre>
+```php
+    $messages = [
+        'required' => 'The field :attribute is required'
+    ];
+    
+    $modelValidator = new ModelCreateValidator($this->app['validator']);
+    
+    if ($modelValidator->with($inputArray)->withMessages($messages)->passes()) {
+        // Do some stuff for passing
+    } else {
+        // Get the errors
+        $validationErrors = $modelValidator->errors();
+        
+        // Do some stuff for failing
+    }
+```
