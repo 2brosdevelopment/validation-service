@@ -5,6 +5,7 @@
       "TwoBros\\ValidationService\\": "src/"
     }
   },
+  "license": "Apache-2.0",
   "keywords": [
     "laravel",
     "validation"
