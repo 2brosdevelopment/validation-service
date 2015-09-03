@@ -5,6 +5,10 @@
       "TwoBros\\ValidationService\\": "src/"
     }
   },
+  "keywords": [
+    "laravel",
+    "validation"
+  ],
   "authors": [
     {
       "name": "Vincent Sposato",
