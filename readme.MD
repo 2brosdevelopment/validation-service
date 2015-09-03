@@ -54,7 +54,8 @@ Now when you want to validate data, you can pass the data into the validator and
 ```php
     $modelValidator = new ModelCreateValidator($this->app['validator']);
     
-    if ($modelValidator->with($inputArray)->passes()) {
+    if ($modelValidator->with($inputArray)
+                       ->passes()) {
         // Do some stuff for passing
     } else {
         // Get the errors
@@ -75,7 +76,8 @@ If you want customize your validation messages, you can do this by passing the m
     
     $modelValidator = new ModelCreateValidator($this->app['validator']);
     
-    if ($modelValidator->with($inputArray, $messages)->passes()) {
+    if ($modelValidator->with($inputArray, $messages)
+                       ->passes()) {
         // Do some stuff for passing
     } else {
         // Get the errors
@@ -94,7 +96,9 @@ Or by using the `withMessages` method of the validator.
     
     $modelValidator = new ModelCreateValidator($this->app['validator']);
     
-    if ($modelValidator->with($inputArray)->withMessages($messages)->passes()) {
+    if ($modelValidator->with($inputArray)
+                       ->withMessages($messages)
+                       ->passes()) {
         // Do some stuff for passing
     } else {
         // Get the errors
@@ -134,7 +138,10 @@ You can then add the function to the call string, so you can customize this with
 ```php
     $modelValidator = new ModelCreateValidator($this->app['validator']);
     
-    if ($modelValidator->with($inputArray)->setUniqueId('email', $modelToUpdate->id)->addRuntimeValidationRules()->passes()) {
+    if ($modelValidator->with($inputArray)
+                       ->setUniqueId('email', $modelToUpdate->id)
+                       ->addRuntimeValidationRules()
+                       ->passes()) {
         // Do some stuff for passing
     } else {
         // Get the errors
@@ -150,7 +157,10 @@ You will note that you must use the `setUniqueId` method call to set the id of t
 
     public function update(ModelValidator $modelValidator) {
 
-        if ($modelValidator->with($inputArray)->setUniqueId('email', $modelToUpdate->id)->addRuntimeValidationRules()->passes()) {
+        if ($modelValidator->with($inputArray)
+                           ->setUniqueId('email', $modelToUpdate->id)
+                           ->addRuntimeValidationRules()
+                           ->passes()) {
             // Do some stuff for passing
         } else {
             // Get the errors
