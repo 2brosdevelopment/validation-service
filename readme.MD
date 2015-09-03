@@ -44,22 +44,18 @@ The format for this configuration file is:
 
 For each model that you need to validate, you can simply create a validation class and extend the `TwoBros\ValidationService\Services\Validation\LaravelValidator`.
 
-<pre>
-    <code>
-        ```php
-            use TwoBros\ValidationService\Services\Validation\LaravelValidator;
-            
-            class ModelCreateValidator extends LaravelValidator
-            {
-                protected $rules = [
-                    'name' => 'required|min:8'
-                ];
-                
-                
-            }
-        ```
-    </code>
-</pre>
+```php
+    use TwoBros\ValidationService\Services\Validation\LaravelValidator;
+    
+    class ModelCreateValidator extends LaravelValidator
+    {
+        protected $rules = [
+            'name' => 'required|min:8'
+        ];
+        
+        
+    }
+```
 
 Now when you want to validate data, you can pass the data into the validator and determine if it passed or not.
 
