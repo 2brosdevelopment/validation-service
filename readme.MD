@@ -1,7 +1,7 @@
 # Installation & Setup
 
 ## Composer
-You can install this package via <a href="getcomposer.org">Composer</a> by running the command: `composer require "two_bros/ValidationService:~1.0"`.
+You can install this package via <a href="http://getcomposer.org">Composer</a> by running the command: `composer require "two_bros/ValidationService:~1.0"`.
 
 Or by adding the package to your `composer.json`
 <pre>
