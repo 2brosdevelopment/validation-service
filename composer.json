@@ -1,5 +1,5 @@
 {
-  "name": "TwoBros/ValidationService",
+  "name": "TwoBros/validation-service",
   "autoload": {
     "psr-4": {
       "TwoBros\\ValidationService\\": "src/"
