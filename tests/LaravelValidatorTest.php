@@ -228,10 +228,6 @@
                 'email' => 'vsposato@example.com'
             ];
 
-            $customMessages = [
-                'name.required' => 'This is a test message make sure it comes through'
-            ];
-
             $this->stubValidator->with( $badData )
                                 ->setUniqueId( 'email', 1 )
                                 ->addRuntimeValidationRules();

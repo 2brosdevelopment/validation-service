@@ -5,6 +5,16 @@
       "TwoBros\\ValidationService\\": "src/"
     }
   },
+  "authors": [
+    {
+      "name": "Vincent Sposato",
+      "email": "vsposato@sposatoenterprises.com"
+    },
+    {
+      "name": "John Sposato",
+      "email": "jsposato@sposatoenterprises.com"
+    }
+  ],
   "require-dev": {
     "phpunit/phpunit": "4.*",
     "fzaninotto/faker": "~1.4",
