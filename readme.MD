@@ -1,4 +1,4 @@
-# Installation & Setup
+# Installation & Setup [![Build Status](https://travis-ci.org/2brosdevelopment/validation-service.svg?branch=develop)](https://travis-ci.org/2brosdevelopment/validation-service)
 
 ## Composer
 You can install this package via <a href="http://getcomposer.org">Composer</a> by running the command: `composer require "two_bros/ValidationService:~1.0"`.
